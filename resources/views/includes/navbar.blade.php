@@ -4,7 +4,7 @@
     >
     <div class="container navbar-color" >
         <a href="{{ route('home') }}" class="navbar-brand">
-            <img src="/images/logo.svg" alt="Logo" />
+            <img src="/images/logo/ndawin-nav-logo.png" alt="Logo" width="100"/>
         </a>
 
         <button
@@ -22,10 +22,10 @@
                     <a href="{{ route('home') }}" class="nav-link">Beranda</a>
                 </li>
                 <li class="nav-item  {{ (request()->is('categories*')) ? 'active' : '' }}">
-                    <a href="{{ route('categories') }}" class="nav-link">Kategori</a>
+                    <a href="{{ route('categories') }}" class="nav-link">Belanja</a>
                 </li>
-                <li class="nav-item  {{ (request()->is('/promo*')) ? 'active' : '' }}" >
-                    <a href="#" class="nav-link">Promo</a>
+                <li class="nav-item  {{ (request()->is('about*')) ? 'active' : '' }}" >
+                    <a href="{{ route('about') }}" class="nav-link">Tentang Kami</a>
                 </li>
 
                 {{-- Jika belum login --}}
@@ -37,6 +37,8 @@
                         <a
                         href="{{ route('login') }}"
                         class="nav-link btn btn-success px-4 text-white"
+                        style="background-color: rgb(235, 226, 50);
+                        border:none;"
                         >Masuk
                         </a>
                     </li>
@@ -49,6 +51,22 @@
             
             <!-- Desktop -->
             <ul class="navbar-nav d-none d-lg-flex">
+                <li class="nav-item">
+                    <a href="{{ route('cart') }}" class="nav-link d-inline-block mt-2">
+
+                        @php
+                            $carts = \App\Models\Cart::where('users_id', Auth::user()->id)->count();
+                        @endphp
+
+                        @if ($carts > 0)
+                            <img src="/images/icon-filled-cart.svg" alt="" />
+                            <div class="card-badge">{{ $carts }}</div>
+                        @else
+                            <img src="/images/icon-empty-cart.svg" alt="" />
+                        @endif
+                        
+                    </a>
+                </li>
                 <li class="nav-item dropdown">
                     <a
                     href="#"
@@ -58,7 +76,7 @@
                     data-toggle="dropdown"
                     >
                         <img
-                            src="/images/profile-picture.png"
+                            src="/images/profile/profile-1.png"
                             alt="Profile picture"
                             class="rounded-circle mr-2 profile-picture"
                         />
@@ -95,22 +113,6 @@
                                 @csrf
                             </form>
                         </div>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="{{ route('cart') }}" class="nav-link d-inline-block mt-2">
-
-                        @php
-                            $carts = \App\Models\Cart::where('users_id', Auth::user()->id)->count();
-                        @endphp
-
-                        @if ($carts > 0)
-                            <img src="/images/icon-filled-cart.svg" alt="" />
-                            <div class="card-badge">{{ $carts }}</div>
-                        @else
-                            <img src="/images/icon-empty-cart.svg" alt="" />
-                        @endif
-                        
                     </a>
                 </li>
             </ul>

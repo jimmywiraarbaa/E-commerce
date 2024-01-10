@@ -35,6 +35,9 @@ Route::get('/categories/{id}', [CategoryController::class, 'detail'])->name('cat
 Route::get('/details/{id}', [DetailController::class, 'index'])->name('detail');
 Route::post('/details/{id}', [DetailController::class, 'add'])->name('detail-add');
 
+Route::get('/about', function () {
+    return view('pages.about');
+})->name('about');
 
 // Bakalan di akses midtrans, jangan kasih middleware
 Route::post('/checkout/callback', [CheckoutController::class, 'callback'])->name('midtrans-callback');

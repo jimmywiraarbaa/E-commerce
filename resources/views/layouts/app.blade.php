@@ -9,7 +9,10 @@
     <meta name="description" content="Action Figure Marketplace" />
     <meta name="author" content="Alif Suryadi" />
 
-    <title>@yield('title')</title>
+    <title>@yield('title')</title>    
+    <link rel="icon" href="images/logo/ndawin-store-logo.jpg">
+    
+    
 
     {{-- Styles --}}
     @stack('prepend-style')

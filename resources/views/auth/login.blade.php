@@ -1,7 +1,7 @@
 @extends('layouts.auth')
 
 @section('title')
-    Halaman Masuk Toko
+    Ndawin Store - Login
 @endsection
 
 @section('content')
@@ -9,16 +9,16 @@
         <section class="section-store-auth">
             <div class="container">
                 <div class="row align-content-center row-login">
-                    <div class="col-lg-6 text-center">
+                    <div class="col-lg-6 text-center" data-aos="fade-right">
                         <img
-                        src="/images/login-placeholder.jpg"
+                        src="/images/loginpage.png"
                         class="w-50 mb-4 mb-lg-none"
                         alt="Login Image"
                         />
                     </div>
-                    <div class="col-lg-5">
+                    <div class="col-lg-5" data-aos="fade-left">
                         <h2>
-                            Belanja action figure favoritmu, <br> menjadi lebih mudah
+                            Silahkan login dahulu ya buk,<br> happy shopping!!!
                         </h2>
                         <form method="POST" class="mt-3" action="{{ route('login') }}">
                             @csrf
@@ -69,17 +69,15 @@
 
                             <button
                                 type="submit"
-                                class="btn btn-success btn-block px-4 mt-4"
+                                class="btn btn-success btn-block px-4 mt-4" style="background-color:rgb(235, 226, 50); border: none; "
                             >
                                 Masuk
                             </button>
-                            <a
-                                href="{{ route('register') }}"
-                                class="btn btn-signup btn-block px-45 mt-2"
-                            >
-                                Mendaftar
-                            </a>
-
+                            <br>
+                            <span>
+                                Belum Punya Akun?<a href="{{ route('register') }}" class="px-1 mt-2"
+                                >Daftar</a>
+                            </span>
                         </form>
                     </div>
                 </div>

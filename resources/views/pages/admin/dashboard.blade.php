@@ -10,7 +10,7 @@
         <div class="dashboard-heading">
             <h2 class="dashboard-title">Administrator</h2>
             <p class="dashboard-subtitle">
-                Ini adalah Panel Administrator
+                Manajemen Data yang Cerdas, Hasil yang Optimal
             </p>
         </div>
         <!-- Dashboard content -->

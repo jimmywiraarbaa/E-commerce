@@ -1,7 +1,7 @@
 @extends('layouts.app') 
 
 @section('title') 
-    Halaman Detail Produk
+    Detail Produk
 @endsection
 
 
@@ -18,7 +18,7 @@
                 <div class="col-12">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
-                            <a href="/index.html">Beranda</a>
+                            <a href="{{ route('home') }}">Beranda</a>
                         </li>
                         <li class="breadcrumb-item active">Detail Produk</li>
                     </ol>
@@ -85,7 +85,7 @@
                             <button
                                 type="submit"
                                 class="btn btn-success btn-block text-white px-4 mb-3"
-                                >Tambah ke keranjang
+                                ><i class="fa-solid fa-cart-shopping">Tambah</i>
                             </button>        
                         </form>                   
 

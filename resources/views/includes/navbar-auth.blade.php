@@ -4,7 +4,7 @@
     >
     <div class="container">
     <a href="{{ route('home') }}" class="navbar-brand">
-        <img src="/images/logo.svg" alt="Logo" />
+        <img src="/images/logo/ndawin-nav-logo.png" alt="Logo" width="90px" />
     </a>
 
     <button
@@ -22,10 +22,10 @@
             <a href="{{ route('home') }}" class="nav-link">Beranda</a>
         </li>
         <li class="nav-item">
-            <a href="{{ route('categories') }}" class="nav-link">Kategori</a>
+            <a href="{{ route('categories') }}" class="nav-link">Belanja</a>
         </li>
         <li class="nav-item">
-            <a href="#" class="nav-link">Promo</a>
+            <a href="{{ route('about') }}" class="nav-link">Tentang Kami</a>
         </li>
         </ul>
     </div>

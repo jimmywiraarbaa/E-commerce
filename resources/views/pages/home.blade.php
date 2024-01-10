@@ -1,7 +1,7 @@
 @extends('layouts.app') 
 
 @section('title') 
-    Beranda
+    Home - Ndawin Store
 @endsection
 
 
@@ -35,21 +35,21 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-bs-interval="100">
                                 <img
-                                    src="/images/promo/banner 1.jpg"
+                                    src="/images/carousel/carousel-1-new.png"
                                     alt="Carousel Image"
                                     class="d-block w-100"
                                 />
                             </div>
                             <div class="carousel-item" data-bs-interval="200">
                                     <img
-                                    src="/images/promo/banner 2.jpg"
+                                    src="/images/carousel/carousel-2-new.png"
                                     alt="Carousel Image"
                                     class="d-block w-100"
                                     />
                             </div>
                             <div class="carousel-item" data-bs-interval="300">
                                 <img
-                                    src="/images/promo/banner 3.jpg"
+                                    src="/images/carousel/carousel-3-new.png"
                                     alt="Carousel Image"
                                     class="d-block w-100"
                                 />
@@ -90,7 +90,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12" data-aos="fade-up">
-                    <h5>Kategori Populer</h5>
+                    <h5>Kategori Produk</h5>
                 </div>
             </div>
             <div class="row">
@@ -177,12 +177,6 @@
 
             </div>
         </div>
-    </section>
-    
-
-    <section class="decoration" data-aos="fade-up"
-        data-aos-anchor-placement="bottom-bottom">
-        <img src="/images/decoration/One Piece.png" alt="">
     </section>
 </div>
 @endsection

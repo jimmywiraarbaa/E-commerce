@@ -13,8 +13,8 @@
                     >
                     <div class="col-lg-5">
                         <h2>
-                            Memulai untuk jual beli <br />
-                            dengan cara terbaru
+                            Daftar akun dulu buk,  <br />
+                            happy shopping!!!
                         </h2>
                         <form method="POST" action="{{ route('register') }}" class="mt-3">
                             @csrf
@@ -22,7 +22,6 @@
                                 <label for="name">Nama Lengkap</label>
                                 <input  id="name" 
                                         type="text" 
-                                        placeholder="nama kamu"
                                         class="form-control @error('name') is-invalid @enderror" 
                                         name="name" value="{{ old('name') }}" 
                                         required autocomplete="name" 
@@ -140,12 +139,17 @@
                                 type="submit"
                                 class="btn btn-success btn-block px-4 mt-4"
                                 :disabled="this.email_unavailable"
+                                style="background-color: rgb(235, 226, 50);
+                                        border:none;"
                             >
                                 Daftar
                             </button>
-                            <a href="{{ route('login') }}" class="btn btn-signup btn-block px-4 mt-2"
-                                >Kembali Login</a
-                            >
+                            <br>
+                            <span>
+                                Sudah Punya Akun?<a href="{{ route('login') }}" class="px-1 mt-2"
+                                >Masuk</a>
+                            </span>
+                            
                         </form>
                     </div>
                 </div>
