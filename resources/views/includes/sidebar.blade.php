@@ -1,12 +1,13 @@
 <div class="border-right" id="sidebar-wrapper">
     <div class="sidebar-heading text-center">
       <img
-        src="/images/dashboard-store-logo.svg"
+        src="/images/logo/ndawin-store-logo.jpg"
         alt="Logo Dashboard"
         class="my-4 mt-5"
+        width="150px"
       />
     </div>
-    <div class="list-group list-group-flush">
+    {{-- <div class="list-group list-group-flush">
       <a
         href="{{ route('dashboard') }}"
         class="list-group-item list-group-item-action {{ (request()->is('dashboard')) ? 'active' : '' }}"
@@ -19,7 +20,7 @@
         class="list-group-item list-group-item-action {{ (request()->is('dashboard/products*')) ? 'active' : '' }}"
         >Produk Saya</a
       >
-    </div>
+    </div> --}}
     <div class="list-group list-group-flush">
       <a
         href="{{ route('dashboard-transaction') }}"
@@ -27,13 +28,13 @@
         >Transaksi</a
       >
     </div>
-    <div class="list-group list-group-flush">
+    {{-- <div class="list-group list-group-flush">
       <a
         href="{{ route('dashboard-settings-store') }}"
         class="list-group-item list-group-item-action {{ (request()->is('dashboard/setting*')) ? 'active' : '' }}"
         >Pengaturan Toko</a
       >
-    </div>
+    </div> --}}
     <div class="list-group list-group-flush">
       <a
         href="{{ route('dashboard-settings-account') }}"

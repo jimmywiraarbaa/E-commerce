@@ -60,7 +60,7 @@
                       data-toggle="dropdown"
                     >
                       <img
-                        src="/images/profile-picture.png"
+                        src="/images/profile/profile-1.png"
                         alt="Profile picture"
                         class="rounded-circle mr-2 profile-picture"
                       />

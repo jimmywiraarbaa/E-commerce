@@ -125,48 +125,49 @@
                         <ul class="list-unstyled">
                             <li class="media">
                                 <img
-                                    src="/images/testimoni/icons-testinomial-1.png"
+                                    src="/images/testimoni/man-testimoni.png"
                                     class="rounded-circle mr-3"
                                     alt=""
                                 />
                                 <div class="media-body">
-                                    <h5 class="mt-2 mb-1">Hazza Risky</h5>
+                                    <h5 class="mt-2 mb-1">Chandra Dharma</h5>
                                     <p>
-                                        Setelah membeli action figure ini, saya sangat senang dengan 
-                                        memutuskan membelinya. Terlepas dari awalnya saya meragukan kesesuaian 
-                                        dengan harga yang cukup mahal bagi saya.
+                                        Bahan berkualitas tinggi memberikan kenyamanan maksimal, 
+                                        sementara desainnya yang elegan dan modern memberikan sentuhan 
+                                        fashion yang memikat. Keunikan produk ini terletak pada perpaduan 
+                                        antara fungsionalitas dan estetika, menjadikannya pilihan yang tepat 
+                                        untuk melengkapi gaya hidup yang dinamis.
                                     </p>
                                 </div>
                             </li>
                             <li class="media">
                                 <img
-                                    src="/images/testimoni/icons-testinomial-2.png"
+                                    src="/images/testimoni/woman-profile.png"
                                     class="rounded-circle mr-3"
                                     alt=""
                                 />
                                 <div class="media-body">
-                                    <h5 class="mt-2 mb-1">Anna Sukkirata</h5>
+                                    <h5 class="mt-2 mb-1">Citra Dewi</h5>
                                     <p>
-                                        Kualitas action figure ini luar biasa. 
-                                        Detailnya halus, dan bahan yang digunakan terasa tahan lama. 
-                                        Saya terkesan dengan kualitas pembuatan yang terlihat dari setiap aspek action figure. 
+                                        Produk ini menyuguhkan kombinasi sempurna antara keindahan desain 
+                                        . Material berkualitas tinggi memberikan pengalaman 
+                                        pengguna yang nyaman dan tahan lama.
                                     </p>
                                 </div>
                             </li>
                             <li class="media">
                                 <img
-                                    src="/images/testimoni/icons-testinomial-3.png"
+                                    src="/images/testimoni/woman-profile-2.png"
                                     class="rounded-circle mr-3"
                                     alt=""
                                 />
                                 <div class="media-body">
-                                    <h5 class="mt-2 mb-1">Dakimu Wangi</h5>
+                                    <h5 class="mt-2 mb-1">Fitriani Indah</h5>
                                     <p>
-                                        Saya perlu menambahkan bahwa interaksi dengan 
-                                        customer service dari "{{ $product->user->store_name }}" sangat memuaskan. 
-                                        Mereka responsif terhadap pertanyaan saya dan memberikan 
-                                        informasi yang diperlukan dengan jelas. Pelayanan pelanggan 
-                                        yang baik membuat pengalaman berbelanja semakin menyenangkan.
+                                        Bahan yang digunakan tidak hanya memberikan tampilan yang menarik, 
+                                        tetapi juga kenyamanan optimal saat dipakai. Desainnya yang kreatif 
+                                        dan modern membuat pakaian ini cocok untuk berbagai kesempatan, 
+                                        dari formal hingga santai.
                                     </p>
                                 </div>
                             </li>

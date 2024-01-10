@@ -25,7 +25,7 @@
                             <div class="col-md-12">
                                 <div class="text-center">
                                     <i>
-                                        <img src="/images/dashboard-store-logo.svg" alt="" width="50px">
+                                        <img src="/images/logo/ndawin-store-logo.jpg" alt="" width="100px">
                                     </i>
                                     
                                     <p class="pt-0"> {{ Auth::user()->store_name }}  </p>
@@ -200,7 +200,7 @@
 @endsection 
 
 @push('addon-script')
-<script src="https://kit.fontawesome.com/a659457a61.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/81d8562a98.js" crossorigin="anonymous"></script>
 <script type="text/javascript">
     window.print();
 </script>
